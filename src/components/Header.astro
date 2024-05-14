@@ -1,0 +1,110 @@
+---
+import "@/styles/globals.css";
+---
+
+<header
+  class="relative mx-8 my-6 md:ml-[2.44rem] md:mr-10 md:max-2xl:mb-[1.31rem] md:max-2xl:mt-[1.38rem] md:max-2xl:flex md:max-2xl:items-center md:max-2xl:justify-between md:max-2xl:gap-[3.64rem] xl:ml-[10.56rem] xl:mr-[10.31rem]"
+>
+  <div class="flex items-center gap-[6.14rem]">
+    <img
+      src="/public/images/icons/hamburger.svg"
+      alt="open menu"
+      class="md:max-2xl:hidden"
+      id="openMenu"
+    />
+    <img
+      src="/public/images/icons/close.svg"
+      alt="close menu"
+      class="hidden"
+      id="closeMenu"
+    />
+    <a href="/" class=""
+      ><img src="/public/images/logo.svg" alt="logo" class="" /></a
+    >
+  </div>
+  <!-- Mobile Menu Bar -->
+  <nav
+    class="absolute -left-8 top-14 z-50 hidden h-[37.6875rem] w-[16rem] bg-[#333A44] px-8 pt-16"
+    id="mobileMenu"
+  >
+    <ul class="flex flex-col gap-6">
+      <li>
+        <a
+          href="/about"
+          class="font-SpaceMono text-xl font-bold leading-[1.5625rem] text-[#E5ECF4]"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href="/location"
+          class="font-SpaceMono text-xl font-bold leading-[1.5625rem] text-[#E5ECF4]"
+          >Location</a
+        >
+      </li>
+      <li>
+        <a
+          href="/careers"
+          class="font-SpaceMono text-xl font-bold leading-[1.5625rem] text-[#E5ECF4]"
+          >Careers</a
+        >
+      </li>
+    </ul>
+    <button
+      type="button"
+      class="mt-[21.19rem] h-[3.3125rem] w-48 bg-[#FCB72B] font-SpaceMono text-[0.9375rem] font-bold leading-[1.5625rem] text-white"
+    >
+      Get Scootin</button
+    >
+  </nav>
+  <!-- Tablet & Desktop Menu Bar -->
+  <nav
+    class="hidden md:gap-[5.87rem] md:max-2xl:flex md:max-2xl:items-center md:max-2xl:justify-between xl:gap-[31.94rem]"
+  >
+    <ul class="flex items-center justify-center gap-8">
+      <li>
+        <a
+          href="/about"
+          class="font-SpaceMono text-[0.9375rem] font-bold leading-[1.5625rem] text-[#939CAA] transition-colors duration-300 ease-in hover:text-[#FCB72B]"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href="/location"
+          class="font-SpaceMono text-[0.9375rem] font-bold leading-[1.5625rem] text-[#939CAA] transition-colors duration-300 ease-in hover:text-[#FCB72B]"
+          >Location</a
+        >
+      </li>
+      <li>
+        <a
+          href="/careers"
+          class="font-SpaceMono text-[0.9375rem] font-bold leading-[1.5625rem] text-[#939CAA] transition-colors duration-300 ease-in hover:text-[#FCB72B]"
+          >Careers</a
+        >
+      </li>
+    </ul>
+    <button
+      type="button"
+      class="h-[3.3125rem] w-[11.25rem] cursor-pointer bg-[#FCB72B] font-SpaceMono text-[0.9375rem] font-bold leading-[1.5625rem] text-white hover:border-[3px] hover:border-solid hover:border-[#FCB72B] hover:bg-transparent hover:text-[#FCB72B]"
+    >
+      Get Scootin</button
+    >
+  </nav>
+</header>
+
+<script is:inline>
+  const openMenu = document.querySelector("#openMenu");
+  const closeMenu = document.querySelector("#closeMenu");
+  const mobileMenu = document.querySelector("#mobileMenu");
+  openMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+    closeMenu.classList.remove("hidden");
+    openMenu.classList.add("hidden");
+  });
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    closeMenu.classList.add("hidden");
+    openMenu.classList.remove("hidden");
+  });
+</script>
