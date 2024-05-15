@@ -1,0 +1,200 @@
+---
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import ScootToday from "@/components/ScootToday.astro";
+---
+
+<Layout title="Frontend Mentor | Scoot">
+  <!-- THE HEADER -->
+  <Header />
+  <main>
+    <!-- THE TITLE -->
+    <section class="relative overflow-hidden">
+      <picture>
+        <source
+          media="(min-width:1440px )"
+          srcset="/images/images/careers-locations-hero-desktop.jpg"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="/images/images/careers-locations-hero-tablet.jpg"
+        />
+        <img
+          src="/images/images/careers-location-hero-mobile.jpg"
+          alt=""
+          class=""
+        />
+      </picture>
+      <div class="">
+        <h1
+          class="bg-[#2F3B59]/-25 absolute top-0 flex h-40 w-full items-center justify-center font-SpaceMono text-[2.5rem] font-bold leading-10 tracking-[-0.11163rem] text-white md:h-[12.5rem] md:pl-[6.06rem] md:text-[3.5rem] md:leading-[3.5rem] md:tracking-[-0.15625rem] md:max-2xl:items-center md:max-2xl:justify-start md:max-2xl:text-left xl:pl-[10.31rem]"
+        >
+          Locations
+        </h1>
+        <img
+          src="/images/patterns/white-circles.svg"
+          alt=""
+          class="absolute right-[-30px] top-[70px] hidden md:max-2xl:flex"
+        />
+      </div>
+    </section>
+    <!-- THE MAP -->
+    <section
+      class="relative mx-8 my-[4.5rem] md:mx-12 md:my-[7.5rem] xl:ml-[10.25rem] xl:mr-[10.31rem]"
+    >
+      <picture>
+        <source
+          media="(min-width:1440px )"
+          srcset="/images/images/world-map-desktop.png"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="/images/images/world-map-tablet.png"
+        />
+        <img src="/images/images/world-map-mobile.png" alt="" class="" />
+      </picture>
+      <!-- LISTED CITY FOR MOBILE -->
+      <div
+        class="mt-8 flex flex-col items-center justify-center gap-4 text-center md:max-2xl:hidden"
+      >
+        <h3
+          class="flex h-[4.5rem] w-[19.4375rem] items-center justify-center bg-[#FCB72B26] font-SpaceMono text-2xl font-bold leading-7 tracking-[-0.06694rem] text-[#495567]"
+        >
+          New York
+        </h3>
+        <h3
+          class="flex h-[4.5rem] w-[19.4375rem] items-center justify-center bg-[#FCB72B26] font-SpaceMono text-2xl font-bold leading-7 tracking-[-0.06694rem] text-[#495567]"
+        >
+          London
+        </h3>
+        <h3
+          class="flex h-[4.5rem] w-[19.4375rem] items-center justify-center bg-[#FCB72B26] font-SpaceMono text-2xl font-bold leading-7 tracking-[-0.06694rem] text-[#495567]"
+        >
+          Yokohama
+        </h3>
+        <h3
+          class="flex h-[4.5rem] w-[19.4375rem] items-center justify-center bg-[#FCB72B26] font-SpaceMono text-2xl font-bold leading-7 tracking-[-0.06694rem] text-[#495567]"
+        >
+          Jakarta
+        </h3>
+      </div>
+      <!-- LISTED CITY FOR DESKTOP -->
+      <div class="hidden md:max-2xl:flex">
+        <!-- New York -->
+        <div
+          class="absolute left-40 top-[3.25rem] md:left-[6rem] md:top-[2.25rem]"
+        >
+          <h3
+            class="flex h-10 w-[7.5rem] items-center justify-center bg-[#FCB72B] font-SpaceMono text-sm font-bold leading-7 tracking-[-0.03625rem] text-[#495567] xl:h-[5.5rem] xl:w-[11.8125rem] xl:text-2xl xl:tracking-[-0.06694rem]"
+          >
+            New York
+          </h3>
+          <!-- ARROW -->
+          <div
+            class="relative bottom-[0.1rem] left-[5.25rem] md:left-[3.25rem]"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+              <path
+                fill="#FCB72B"
+                stroke="#FCB72B"
+                stroke-width="3"
+                d="M1 1l8 8 8-8"></path>
+            </svg>
+          </div>
+        </div>
+        <!-- LONDON -->
+        <div class="absolute left-[25rem] top-[12px] md:left-[15rem]">
+          <h3
+            class="flex h-10 w-[7.5rem] items-center justify-center bg-[#FCB72B] font-SpaceMono text-sm font-bold leading-7 tracking-[-0.03625rem] text-[#495567] xl:h-[5.5rem] xl:w-[11.8125rem] xl:text-2xl xl:tracking-[-0.06694rem]"
+          >
+            London
+          </h3>
+          <!-- ARROW -->
+          <div
+            class="relative bottom-[0.1rem] left-[5.25rem] md:left-[3.25rem]"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+              <path
+                fill="#FCB72B"
+                stroke="#FCB72B"
+                stroke-width="3"
+                d="M1 1l8 8 8-8"></path>
+            </svg>
+          </div>
+        </div>
+        <!-- Yokohama -->
+        <div
+          class="absolute right-[4.063rem] top-16 md:right-[2.063rem] md:top-12"
+        >
+          <h3
+            class="flex h-10 w-[7.5rem] items-center justify-center bg-[#FCB72B] font-SpaceMono text-sm font-bold leading-7 tracking-[-0.03625rem] text-[#495567] xl:h-[5.5rem] xl:w-[11.8125rem] xl:text-2xl xl:tracking-[-0.06694rem]"
+          >
+            Yokohama
+          </h3>
+          <!-- ARROW -->
+          <div
+            class="relative bottom-[0.1rem] left-[5.25rem] md:left-[3.25rem]"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+              <path
+                fill="#FCB72B"
+                stroke="#FCB72B"
+                stroke-width="3"
+                d="M1 1l8 8 8-8"></path>
+            </svg>
+          </div>
+        </div>
+        <!-- Jakarta -->
+        <div
+          class="absolute right-[9.063rem] top-[15rem] md:right-[5.5rem] md:top-[9.5rem]"
+        >
+          <h3
+            class="flex h-10 w-[7.5rem] items-center justify-center bg-[#FCB72B] font-SpaceMono text-sm font-bold leading-7 tracking-[-0.03625rem] text-[#495567] xl:h-[5.5rem] xl:w-[11.8125rem] xl:text-2xl xl:tracking-[-0.06694rem]"
+          >
+            Jakarta
+          </h3>
+          <!-- ARROW -->
+          <div
+            class="relative bottom-[0.125rem] left-12 xl:bottom-[0.1rem] xl:left-[5.25rem]"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+              <path
+                fill="#FCB72B"
+                stroke="#FCB72B"
+                stroke-width="3"
+                d="M1 1l8 8 8-8"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- NOT LISTED CITY MESSAGE US -->
+      <div
+        class="mt-16 flex flex-col items-center justify-center gap-8 text-center md:gap-10 xl:flex-row xl:gap-[1.87rem] xl:text-left"
+      >
+        <h2
+          class="w-[19.4375rem] font-SpaceMono text-[2rem] font-bold leading-8 tracking-[-0.08931rem] text-[#495567] md:w-[28.5625rem] md:text-[3rem] md:leading-[3rem] md:tracking-[-0.13394rem] xl:w-[21.9375rem]"
+        >
+          Your city not listed?
+        </h2>
+        <p
+          class="w-[19.4375rem] font-LexendDeca text-[0.9375rem] font-normal leading-[1.5625rem] text-[#939CAA] md:w-[35.8125rem] xl:mr-[4.78rem] xl:w-[27.8125rem]"
+        >
+          If you&#39; d like to see Scoot in your hometown, be sure to let us
+          know. We track requests and plan launches based on demand. Feel free
+          to message us by clicking the link or messaging us on social.
+        </p>
+        <a
+          href="/"
+          class="flex h-[3.3125rem] w-[11.25rem] items-center justify-center bg-[#FCB72B] font-SpaceMono text-[0.9375rem] font-bold leading-[1.5625rem] text-white transition-all duration-300 ease-in hover:border-[3px] hover:border-solid hover:border-[#FCB72B] hover:bg-transparent hover:text-[#FCB72B]"
+          >Message Us</a
+        >
+      </div>
+    </section>
+
+    <ScootToday />
+  </main>
+  <!-- THE FOOTER -->
+  <Footer />
+</Layout>
