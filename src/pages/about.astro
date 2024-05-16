@@ -1,0 +1,49 @@
+---
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import ScootToday from "@/components/ScootToday.astro";
+import WhyJoin from "@/components/WhyJoin.astro";
+---
+
+<Layout title="Frontend Mentor | Scoot">
+  <!-- THE HEADER -->
+  <Header />
+  <main class="overflow-hidden">
+    <!-- THE TITLE -->
+    <section class="relative overflow-hidden">
+      <picture>
+        <source
+          media="(min-width:1440px )"
+          srcset="/images/images/about-hero-desktop.jpg"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="/images/images/about-hero-tablet.jpg"
+        />
+        <img src="/images/images/about-hero-mobile.jpg" alt="" class="" />
+      </picture>
+      <div class="">
+        <h1
+          class="bg-[#2F3B59]/-25 absolute top-0 flex h-40 w-full items-center justify-center font-SpaceMono text-[2.5rem] font-bold leading-10 tracking-[-0.11163rem] text-white md:h-[12.5rem] md:pl-[6.06rem] md:text-[3.5rem] md:leading-[3.5rem] md:tracking-[-0.15625rem] md:max-2xl:items-center md:max-2xl:justify-start md:max-2xl:text-left xl:pl-[10.31rem]"
+        >
+          About
+        </h1>
+        <img
+          src="/images/patterns/white-circles.svg"
+          alt=""
+          class="absolute right-[-30px] top-[70px] hidden md:max-2xl:flex"
+        />
+      </div>
+    </section>
+    <!-- MOBILITY -->
+    <!-- WHY JOIN US -->
+    <WhyJoin />
+    <!-- FAQs -->
+    <!-- SIGN IN & SCOOT TODAY -->
+    <ScootToday />
+  </main>
+  <!-- THE FOOTER -->
+  <Footer />
+</Layout>
