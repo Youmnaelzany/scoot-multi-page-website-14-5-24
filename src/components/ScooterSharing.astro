@@ -1,0 +1,57 @@
+---
+import "@/styles/globals.css";
+---
+
+<section
+  class="relative flex flex-col items-center justify-center overflow-hidden xl:items-start"
+>
+  <picture>
+    <source
+      media="(min-width:1440px )"
+      srcset="/public/images/images/home-hero-desktop.jpg"
+    />
+    <source
+      media="(min-width:768px )"
+      srcset="/public/images/images/home-hero-tablet.jpg"
+    />
+    <img src="/public/images/images/home-hero-mobile.jpg" alt="" class="" />
+  </picture>
+  <div class="absolute top-0 px-8 pb-[11.19rem] pt-[7.19rem]">
+    <div
+      class="flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left"
+    >
+      <h1
+        class="w-[19.4375rem] font-SpaceMono text-[2.5rem] font-bold leading-10 tracking-[-0.11163rem] text-white md:w-[35.8125rem] md:text-[3.5rem] md:leading-[3.5rem] md:tracking-[-0.15625rem] xl:ml-[10.31rem] xl:w-[31.25rem]"
+      >
+        Scooter sharing made simple
+      </h1>
+      <p
+        class="w-[19.4375rem] font-LexendDeca text-[0.9375rem] font-normal leading-[1.5625rem] text-white md:w-[35.8125rem] xl:ml-[16.25rem] xl:w-[25.3125rem]"
+      >
+        Scoot takes the hassle out of urban mobility. Our bikes are placed in
+        convenient locations in each of our cities. Use our app to locate the
+        nearest bike, unlock it with a tap, and you&#39;re away!
+      </p>
+      <a
+        href="/"
+        class="mt-[0.62rem] flex h-[3.3125rem] w-[11.25rem] items-center justify-center bg-[#FCB72B] text-[0.9375rem] font-bold leading-[1.5625rem] text-white xl:ml-[16.25rem]"
+        >Get Scootin</a
+      >
+    </div>
+    <img
+      src="/public/images/patterns/right-arrow.svg"
+      alt=""
+      class="relative left-[-14rem] top-4 md:left-[-14rem] md:top-[4rem] xl:left-[44rem] xl:top-[-9rem]"
+    />
+    <img
+      src="/public/images/patterns/white-circles.svg"
+      alt=""
+      class="relative right-[-26.625rem] top-[-1rem] hidden md:max-2xl:flex xl:left-[-75.625rem] xl:top-[-14rem]"
+    />
+    <img
+      src="/public/images/patterns/line.svg"
+      alt=""
+      class="relative left-[-1.938rem] top-[-22.125rem] hidden xl:flex"
+    />
+  </div>
+</section>
