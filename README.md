@@ -27,7 +27,7 @@ This is a solution to the [Scoot website challenge on Frontend Mentor](https://w
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Youmnaelzany/scoot-multi-page-website-14-5-24.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://scootmultipage145.netlify.app/)
 
 ### Built with
 
